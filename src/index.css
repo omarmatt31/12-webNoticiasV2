@@ -1,0 +1,11 @@
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #22C1C3;
+  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(73, 0, 163, 1) 100%);
+}
+
+main{
+  flex-grow: 1;
+}
