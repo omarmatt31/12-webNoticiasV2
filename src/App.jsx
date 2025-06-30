@@ -1,11 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import Titulo from "./components/Titulo";
 
 function App() {
  
   return (
     <>
       <main>
-        <h1>Hola Mundo</h1>
+        <Titulo></Titulo>
+        
       </main>
       <footer className="bg-dark text-light text-center py-3">
         <p>💻 Omar Mattos 💻</p>
