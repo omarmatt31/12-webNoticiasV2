@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form"
+import ListaNoticias from "./ListaNoticias";
 
 const FormularioNoticias = () => {
     
@@ -11,7 +12,8 @@ const FormularioNoticias = () => {
     } = useForm()
 
     return (
-        <section className='container bg-secondary py-2'>
+        <>
+        <section className='container bg-secondary py-4'>
             <Form onSubmit={handleSubmit()}>
                     <Form.Group className="w-50 d-flex" controlId="formBasicSintomas">
                         <Form.Label className="text-light">Buscar por categorias:</Form.Label>
@@ -36,6 +38,10 @@ const FormularioNoticias = () => {
                     </div>
                 </Form>
         </section>
+        <section className="container p-0 my-0 rounded-3 w-75 mb-5">
+                <ListaNoticias></ListaNoticias>
+        </section>
+        </>
     );
 };
 
