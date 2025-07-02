@@ -3,7 +3,7 @@ import Titulo from "./components/Titulo";
 import FormularioNoticias from "./components/FormularioNoticias";
 
 function App() {
- 
+
   return (
     <>
       <main>
