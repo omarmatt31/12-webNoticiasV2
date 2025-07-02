@@ -56,23 +56,18 @@ const handleChange = (e) => {
                             required: 'Seleccione una categoria'
                         })}  onChange={handleChange}>
                             <option value="" selected disabled hidden>Seleccione un genero</option>
-                            <option>business</option>
-                            <option>crime</option>
-                            <option>domestic</option>
-                            <option>education</option>
-                            <option>entertainment</option>
-                            <option>environment</option>
-                            <option>food</option>
-                            <option>health</option>
-                            <option>lifestyle</option>
-                            <option>politics</option>
-                            <option>science</option>
-                            <option>sports</option>
-                            <option>technology</option>
-                            <option>top</option>
-                            <option>tourism</option>
-                            <option>world</option>
-                            <option>other</option>
+                            <option value="business">Negocios</option>
+                            <option value="crime">Policiales</option>
+                            <option value="education">Educacion</option>
+                            <option value="entertainment">Entretenimiento</option>
+                            <option value="environment">Medio Ambiente</option>
+                            <option value="food">Comida</option>
+                            <option value="health">Salud</option>
+                            <option value="politics">Politica</option>
+                            <option value="science">Ciencia</option>
+                            <option value="sports">Deporte</option>
+                            <option value="technology">Tecnologia</option>
+                            <option value="world">Mundo</option>
 
                         </Form.Select>
                         <Form.Text className="mb-2 text-danger">{errors.inputCategoria?.message}</Form.Text>
