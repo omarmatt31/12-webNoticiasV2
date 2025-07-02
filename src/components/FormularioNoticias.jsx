@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const FormularioNoticias = () => {
   
-    let categoria=''    
+  
   let url = 'https://newsdata.io/api/1/latest?apikey=pub_c98c47ded19e48b79a93b962f2ebc70d&language=es&category=science';
   const [noticias, setNoticias] = useState([])
   
@@ -29,10 +29,7 @@ const FormularioNoticias = () => {
         const respuesta = await fetch(url)
         if(respuesta.status === 200){
             const datos = await respuesta.json()
-            //console.log(datos.results)
-            //guardar en el state frase
             setNoticias(datos.results)
-            //console.log(noticias)
             //actualizar el spinner
             //setMostrarSpinner(false)
         }
@@ -51,10 +48,10 @@ const handleChange = (e) => {
 
     return (
         <>
-        <section className='container bg-secondary py-4'>
+        <section className='container bg-warning py-4 rounded-2'>
             <Form>
                     <Form.Group className="w-50 d-flex" controlId="formBasicSintomas">
-                        <Form.Label className="text-light">Buscar por categorias:</Form.Label>
+                        <Form.Label className="text-light fw-bolder ms-3">Buscar por categorias:</Form.Label>
                         <Form.Select {...register('inputCategoria', {
                             required: 'Seleccione una categoria'
                         })}  onChange={handleChange}>
