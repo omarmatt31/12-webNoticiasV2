@@ -1,12 +1,74 @@
-# React + Vite
+# 🌍 **Portal de Noticias con React - v2**  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Autor:** Omar Mattos ✨  
+Aplicación React mejorada que filtra noticias por **país + categoría**, consumiendo APIs de noticias internacionales.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🆕 **Nuevas Funcionalidades**  
 
-## Expanding the ESLint configuration
+### 🌐 **Filtrado avanzado**  
+- 🗺️ Selector de país (20+ opciones)  
+- 🏷️ Selector de categoría múltiple  
+- 🔄 Combinación dinámica de filtros  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 🛠️ **Stack Actualizado**  
+
+```plaintext
+Frontend:
+- React
+- Javascript
+- CSS
+
+APIs soportadas:
+- NewsAPI (dev) 
+- NewsData.io (prod)
+```
+
+---
+
+## 🚀 **Configuración Rápida**  
+
+1. Clonar y configurar:  
+```bash
+git clone https://github.com/omarmatt31/12-webNoticiasV2.git
+
+```
+
+2. Instalar e iniciar:  
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🚨 **Consideraciones API**  
+
+1. **NewsAPI.org**:  
+   - Solo localhost  
+   - Máx. 100 req/día  
+
+2. **NewsData.io**:  
+   - Requiere registro  
+   - 200 req/día gratis  
+   - Parámetros:  
+     ```js
+     {
+       country: 'ar,br,us',
+       category: 'business,politics'
+     }
+     ```
+
+---
+
+## 📜 **Licencia**  
+
+MIT License © 2023 [Omar Mattos](https://github.com/omarmatt31).   
+
+---
+
+**¡Explora noticias del mundo!** 📡🌎
