@@ -58,7 +58,7 @@ const handleChange = (e) => {
                         <Form.Select {...register('inputCategoria', {
                             required: 'Seleccione una categoria'
                         })}>
-                            <option value="" selected disabled hidden>Seleccione un genero</option>
+                            <option value="" selected disabled hidden>Seleccione una categoria</option>
                             <option value="business">Negocios</option>
                             <option value="crime">Policiales</option>
                             <option value="education">Educacion</option>
